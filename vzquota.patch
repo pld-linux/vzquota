@@ -1,0 +1,11 @@
+diff -ru vzquota-3.1/src/Makefile vzquota-3.1-patch/src/Makefile
+--- vzquota-3.1/src/Makefile	2012-09-11 02:38:34.000000000 +0200
++++ vzquota-3.1-patch/src/Makefile	2012-10-27 20:23:29.778362100 +0200
+@@ -19,6 +19,7 @@
+ PREFIX = /usr
+ SBINDIR = ${PREFIX}/sbin
+ VARDIR = /var
++MANDIR = /usr/share/man
+ 
+ #DEBUG = -D_DEBUG -g3 -ggdb3 -p -pg
+ CFLAGS += -pipe -I../include -std=gnu99 \
