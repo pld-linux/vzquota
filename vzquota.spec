@@ -1,5 +1,3 @@
-# TODO
-# - not FHS compliant /var/vzquota
 Summary:	Virtuozzo/OpenVZ disk quota control utility
 Summary(pl.UTF-8):	Narzędzie do sterowania limitami dyskowymi Virtuozzo/OpenVZ
 Name:		vzquota
