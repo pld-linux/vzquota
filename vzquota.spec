@@ -2,12 +2,13 @@ Summary:	Virtuozzo/OpenVZ disk quota control utility
 Summary(pl.UTF-8):	Narzędzie do sterowania limitami dyskowymi Virtuozzo/OpenVZ
 Name:		vzquota
 Version:	3.1
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Applications/System
 Source0:	http://download.openvz.org/utils/vzquota/%{version}/src/%{name}-%{version}.tar.bz2
 # Source0-md5:	a3c837999a90381ba028ee73e84f40f2
 Patch0:		vzquota.patch
+Patch1:		time_t.patch
 URL:		http://openvz.org/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -22,6 +23,7 @@ dyskowymi (quota) dla kontenerów Virtuozzo/OpenVZ.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 %{__make} \
